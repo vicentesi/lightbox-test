@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <h1>Hello world!</h1>
+
+  <div class="container">
+
+    <a href="#imgcat.jpg">
+      <img src='./cat.jpg' alt="" />
+    </a>
+
+    <!-- lightbox container hidden with CSS -->
+    <div class="lightbox" id="imgcat.jpg">
+      <div class="lightbox-container">
+        <div class="lightbox-media">
+          <a href="#_">
+            <img id="rotImgcat.jpg" src='./cat.jpg' alt="" />
+          </a>
+        </div>
+        <div class="lightbox-control">
+          <button class="btn-rotate-img" onclick="rotateImage('rotImgcat.jpg')">
+            <i class="icon fa fa-rotate-right fa-2x" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
